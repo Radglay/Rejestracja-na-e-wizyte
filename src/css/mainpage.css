@@ -8,3 +8,15 @@
     align-items: center;
     flex-direction: column;
 }
+
+.footer {
+    background-color: #1a2327;
+    box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    height: 30px;
+    width: 100%;
+    transition: 0.7s;
+  }

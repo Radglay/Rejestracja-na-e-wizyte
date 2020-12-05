@@ -50,7 +50,8 @@ class Menu extends Component {
         return (
             <div className="menudiv" style={mystyle}>
                 <span style={{ marginRight: "auto", display: "flex", alignItems: "center", color: "white", fontSize: "30px", paddingLeft: "1.5%" }}>System rejestracji</span>
-                <div className="menubutton" onClick={this.logout}>Wyloguj się</div>
+                <div className="menubutton" onClick={this.logout}>Lista lekarzy</div>
+                <div className="menubutton" onClick={this.logout}>Zaloguj się</div>
             </div>
         );
     }

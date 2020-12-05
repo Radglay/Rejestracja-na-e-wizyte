@@ -8,6 +8,7 @@
   width: 100%;
   position: fixed;
   transition: 0.7s;
+  z-index: 1000;
 }
 .menubutton {
   color: white;
