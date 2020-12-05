@@ -1,0 +1,30 @@
+.menudiv {
+  background-color: #1a2327;
+  box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  transition: 0.7s;
+}
+.menubutton {
+  color: white;
+  height: 90%;
+  width: 5%;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5%;
+}
+.menubutton:hover{
+  background-color: #2c3a41;
+  cursor: pointer;
+}
+@media screen and (min-width: 800px) and (max-width: 1440px) {
+  .menubutton {
+    width: 10%;
+  }
+}
