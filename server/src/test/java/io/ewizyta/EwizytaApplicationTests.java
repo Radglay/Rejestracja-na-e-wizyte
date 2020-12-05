@@ -1,4 +1,4 @@
-package iogrupa5.ewizyta;
+package io.ewizyta;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
