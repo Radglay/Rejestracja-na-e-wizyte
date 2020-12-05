@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce803fa9-22fb-4d8f-b19c-afada530f350" name="Default Changelist" comment="" />
+    <list default="true" id="ce803fa9-22fb-4d8f-b19c-afada530f350" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/HelloService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/HelloService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,13 +46,18 @@
       </state>
     </system>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1lFsQ95EP4RXZogz362HetvWlKd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -53,6 +69,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EwizytaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ewizyta.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.ewizyta.EwizytaApplication" />
@@ -72,6 +99,7 @@
       <workItem from="1607204158170" duration="212000" />
       <workItem from="1607204427516" duration="64000" />
       <workItem from="1607204527131" duration="151000" />
+      <workItem from="1607204834207" duration="592000" />
     </task>
     <servers />
   </component>

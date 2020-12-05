@@ -1,6 +1,6 @@
-package iogrupa5.ewizyta.repository;
+package io.ewizyta.repository;
 
-import iogrupa5.ewizyta.model.User;
+import io.ewizyta.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package iogrupa5.ewizyta.service;
+package io.ewizyta.service;
 
 import org.springframework.stereotype.Service;
 

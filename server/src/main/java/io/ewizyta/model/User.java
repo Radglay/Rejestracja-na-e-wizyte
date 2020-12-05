@@ -1,4 +1,4 @@
-package iogrupa5.ewizyta.model;
+package io.ewizyta.model;
 
 import lombok.Builder;
 

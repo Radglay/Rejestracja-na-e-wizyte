@@ -1,6 +1,6 @@
-package iogrupa5.ewizyta.controller;
+package io.ewizyta.controller;
 
-import iogrupa5.ewizyta.service.HelloService;
+import io.ewizyta.service.HelloService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

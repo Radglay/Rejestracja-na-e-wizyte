@@ -1,9 +1,9 @@
-package iogrupa5.ewizyta.service;
+package io.ewizyta.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import iogrupa5.ewizyta.model.User;
-import iogrupa5.ewizyta.repository.UserRepository;
+import io.ewizyta.model.User;
+import io.ewizyta.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
