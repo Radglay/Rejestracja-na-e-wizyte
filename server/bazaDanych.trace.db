@@ -1,0 +1,146 @@
+2020-12-05 23:24:21 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"
+Data conversion error converting "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22018-200]
+2020-12-05 23:24:21 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"
+Data conversion error converting "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22018-200]
+2020-12-05 23:25:06 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value not permitted for column "('klient', 'lekarz', 'administrator')": ; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22030-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.value.ExtTypeInfoEnum.getValue(ExtTypeInfoEnum.java:173)
+	at org.h2.value.Value.convertToEnumInternal(Value.java:1276)
+	at org.h2.value.Value.convertTo(Value.java:836)
+	at org.h2.value.Value.convertTo(Value.java:772)
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187)
+	at org.h2.command.dml.Insert.update(Insert.java:151)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at org.h2.result.UpdatableRow.insertRow(UpdatableRow.java:324)
+	at org.h2.jdbc.JdbcResultSet.insertRow(JdbcResultSet.java:3015)
+	at org.h2.server.web.WebApp.editResult(WebApp.java:1138)
+	at org.h2.server.web.WebApp.process(WebApp.java:247)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-12-05 23:25:06 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Value not permitted for column "('klient', 'lekarz', 'administrator')": ; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22030-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:457)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.value.ExtTypeInfoEnum.getValue(ExtTypeInfoEnum.java:173)
+	at org.h2.value.Value.convertToEnumInternal(Value.java:1276)
+	at org.h2.value.Value.convertTo(Value.java:836)
+	at org.h2.value.Value.convertTo(Value.java:772)
+	at org.h2.value.TypeInfo.cast(TypeInfo.java:515)
+	at org.h2.table.Column.validateConvertUpdateSequence(Column.java:378)
+	at org.h2.table.Table.validateConvertUpdateSequence(Table.java:845)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:187)
+	at org.h2.command.dml.Insert.update(Insert.java:151)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:191)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:152)
+	at org.h2.result.UpdatableRow.insertRow(UpdatableRow.java:324)
+	at org.h2.jdbc.JdbcResultSet.insertRow(JdbcResultSet.java:3015)
+	at org.h2.server.web.WebApp.editResult(WebApp.java:1138)
+	at org.h2.server.web.WebApp.process(WebApp.java:247)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+2020-12-05 23:26:11 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"
+Data conversion error converting "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22018-200]
+2020-12-05 23:26:11 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"
+Data conversion error converting "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22018-200]
+2020-12-05 23:26:50 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"
+Data conversion error converting "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22018-200]
+2020-12-05 23:26:50 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLDataException: Błąd konwersji danych "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"
+Data conversion error converting "'' (USER: ""ID"" BIGINT DEFAULT NEXT VALUE FOR ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"" NOT NULL NULL_TO_DEFAULT SEQUENCE ""PUBLIC"".""SYSTEM_SEQUENCE_D6F0C893_407B_4FBB_8A27_76F73CC5ACB9"")"; SQL statement:
+INSERT INTO "PUBLIC"."USER"("ID","IMIE","NAZWISKO","EMAIL","HASLO","PESEL","TELEFON","TYP")VALUES(?,?,?,?,?,?,?,?) [22018-200]
