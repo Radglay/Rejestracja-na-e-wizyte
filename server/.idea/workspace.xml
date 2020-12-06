@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce803fa9-22fb-4d8f-b19c-afada530f350" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.lock.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.mv.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +92,17 @@
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EwizytaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ewizyta.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="io.ewizyta.EwizytaApplication" />
@@ -111,6 +127,8 @@
       <workItem from="1607212482229" duration="37000" />
       <workItem from="1607258536363" duration="6344000" />
       <workItem from="1607267616426" duration="569000" />
+      <workItem from="1607269109570" duration="255000" />
+      <workItem from="1607269377563" duration="2699000" />
     </task>
     <servers />
   </component>
