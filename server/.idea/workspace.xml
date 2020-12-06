@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce803fa9-22fb-4d8f-b19c-afada530f350" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.lock.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,7 @@
       <workItem from="1607205900376" duration="2303000" />
       <workItem from="1607212482229" duration="37000" />
       <workItem from="1607258536363" duration="6344000" />
-      <workItem from="1607267616426" duration="324000" />
+      <workItem from="1607267616426" duration="569000" />
     </task>
     <servers />
   </component>
