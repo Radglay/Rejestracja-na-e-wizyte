@@ -30,21 +30,30 @@ public class User {
     @Column(name = "telefon")
     private String telefon;
 
+    public String getHaslo() {
+        return haslo;
+    }
+
+    public void setHaslo(String haslo) {
+        this.haslo = haslo;
+    }
+
     @Column(name = "typ")
     @Builder.Default
-    private Grupa typ = Grupa.USER;
+    private Grupa typ = Grupa.KLIENT;
 
     public User(){
 
     }
 
-    public User(String imie, String nazwisko, String email, String haslo, String pesel, String telefon) {
+    public User(String imie, String nazwisko, String email, String haslo, String pesel, String telefon, Grupa typ) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.email = email;
         this.haslo = haslo;
         this.pesel = pesel;
         this.telefon = telefon;
+        this.typ = typ;
     }
 
     public Long getId() {
