@@ -9,6 +9,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bazaDanych.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.lock.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.mv.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.trace.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/config/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/HelloService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/UserRegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/UserRegistrationDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +96,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="database.main" />
   </component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="io.ewizyta.service" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="EwizytaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ewizyta.main" />
@@ -116,6 +131,15 @@
       <workItem from="1607272171863" duration="253000" />
       <workItem from="1607272755200" duration="237000" />
       <workItem from="1607275105099" duration="9000" />
+      <workItem from="1607280770943" duration="355000" />
+      <workItem from="1607351756223" duration="1471000" />
+      <workItem from="1607368586474" duration="58000" />
+      <workItem from="1607696326483" duration="405000" />
+      <workItem from="1607696759538" duration="1514000" />
+      <workItem from="1607900777555" duration="1750000" />
+      <workItem from="1607983757324" duration="542000" />
+      <workItem from="1607984310574" duration="2453000" />
+      <workItem from="1607986776150" duration="260000" />
     </task>
     <servers />
   </component>

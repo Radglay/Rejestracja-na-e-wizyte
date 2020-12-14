@@ -1,11 +1,14 @@
 package io.ewizyta.model;
 
 import lombok.Builder;
+import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.Collection;
 
 @Entity
-@Table(name="USER")
+@Table(name="USERS")
+@ToString
 public class User {
 
     @Id
@@ -21,8 +24,8 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @Column(name="haslo")
-    private String haslo;
+    @Column(name="password")
+    private String password;
 
     @Column(name = "pesel")
     private String pesel;
@@ -30,96 +33,81 @@ public class User {
     @Column(name = "telefon")
     private String telefon;
 
-    public String getHaslo() {
-        return haslo;
-    }
-
-    public void setHaslo(String haslo) {
-        this.haslo = haslo;
-    }
-
-    @Column(name = "typ")
-    @Builder.Default
-    private Grupa typ = Grupa.KLIENT;
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "USERS_ROLES",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    private Collection<Role> roles;;
 
     public User(){
 
     }
 
-    public User(String imie, String nazwisko, String email, String haslo, String pesel, String telefon, Grupa typ) {
+    public User(String imie, String nazwisko, String email, String password, String pesel, String telefon, Collection<Role> roles) {
         this.imie = imie;
         this.nazwisko = nazwisko;
         this.email = email;
-        this.haslo = haslo;
+        this.password = password;
         this.pesel = pesel;
         this.telefon = telefon;
-        this.typ = typ;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getImie() {
-        return imie;
+        this.roles = roles;
     }
 
     public void setImie(String imie) {
         this.imie = imie;
     }
 
-    public String getNazwisko() {
-        return nazwisko;
-    }
-
     public void setNazwisko(String nazwisko) {
         this.nazwisko = nazwisko;
-    }
-
-    public String getEmail() {
-        return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getPesel() {
-        return pesel;
+    public void setPassword(String password) {
+        this.password= password;
     }
 
     public void setPesel(String pesel) {
         this.pesel = pesel;
     }
 
-    public String getTelefon() {
-        return telefon;
-    }
-
     public void setTelefon(String telefon) {
         this.telefon = telefon;
     }
 
-    public Grupa getTyp() {
-        return typ;
+    public void setRoles(Collection<Role> roles) {
+        this.roles = roles;
     }
 
-    public void setTyp(Grupa typ) {
-        this.typ = typ;
+    public String getImie() {
+        return imie;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "imie='" + imie + '\'' +
-                ", nazwisko='" + nazwisko + '\'' +
-                ", email='" + email + '\'' +
-                ", pesel='" + pesel + '\'' +
-                ", telefon='" + telefon + '\'' +
-                '}';
+    public String getNazwisko() {
+        return nazwisko;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getPesel() {
+        return pesel;
+    }
+
+    public String getTelefon() {
+        return telefon;
+    }
+
+    public Collection<Role> getRoles() {
+        return roles;
     }
 }

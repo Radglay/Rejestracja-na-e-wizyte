@@ -4,6 +4,7 @@ import io.ewizyta.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configurers.userdetails.DaoAuthenticationConfigurer;
@@ -40,22 +41,28 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception{
-        http.authorizeRequests().antMatchers(
-                "/registration**",
-                "/js/**",
-                "/css/**",
-                "/img/**").permitAll()
-                .anyRequest().authenticated()
+        http.authorizeRequests()
+                .antMatchers("/")
+                .permitAll()
+                .antMatchers("/welcome").hasAnyRole("USER", "ADMIN")
+                .antMatchers(HttpMethod.GET, "/api/**").hasAnyRole("ADMIN")
+                .antMatchers("/register").permitAll()
+                .antMatchers("/login").permitAll()
+                .anyRequest()
+                .authenticated()
                 .and()
                 .formLogin()
-                .loginPage("/login")
+                .loginPage("http://localhost:3000/login")
+                .usernameParameter("username")
+                .passwordParameter("password")
+                .defaultSuccessUrl("/index")
+                .failureUrl("/login?error")
                 .permitAll()
                 .and()
                 .logout()
-                .invalidateHttpSession(true)
-                .clearAuthentication(true)
-                .logoutRequestMatcher(new AntPathRequestMatcher("logout"))
                 .logoutSuccessUrl("/login?logout")
-                .permitAll();
+                .permitAll()
+                .and()
+                .csrf().disable(); //dzieki temu mozna sie logowac
     }
 }

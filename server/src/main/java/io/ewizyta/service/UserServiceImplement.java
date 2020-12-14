@@ -1,17 +1,21 @@
 package io.ewizyta.service;
 
-import io.ewizyta.model.Grupa;
+import io.ewizyta.model.Role;
 import io.ewizyta.model.User;
 import io.ewizyta.repository.UserRepository;
 import io.ewizyta.web.dto.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.stream.Collectors;
 
 @Service
 public class UserServiceImplement implements UserService{
@@ -33,10 +37,10 @@ public class UserServiceImplement implements UserService{
         User user = new User(userRegistrationDto.getImie()
                     ,userRegistrationDto.getNazwisko()
                     ,userRegistrationDto.getEmail()
-                    ,passwordEncoder.encode(userRegistrationDto.getHaslo())
+                    ,userRegistrationDto.getPassword()
                     ,userRegistrationDto.getPesel()
-                    ,userRegistrationDto.getTelefon(),
-                Grupa.KLIENT
+                    ,userRegistrationDto.getTelefon()
+                    ,Arrays.asList(new Role("USER"))
         );
         return userRepository.save(user);
     }
@@ -44,17 +48,17 @@ public class UserServiceImplement implements UserService{
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        User user = userRepository.findByEmail(username); //username = email
+        User user  = userRepository.findUserByEmail(username); //username = email
         if(user == null){ //nie znaleziono w bazie takiego uzytkownika
-            throw new UsernameNotFoundException("Invalid emial or password.");
+            throw new UsernameNotFoundException("Invalid email or password.");
         }
 
         //tworzymy userObject SPRING SECURITY
-        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getHaslo(), Collections.singleton(mapGrupaToAuthorities(user.getTyp())));
+        return new org.springframework.security.core.userdetails.User(user.getEmail(), user.getPassword(), mapRolesToAuthorities(user.getRoles()));
     }
 
-    private SimpleGrantedAuthority mapGrupaToAuthorities(Grupa grupa) {
-         return new SimpleGrantedAuthority(grupa.name());
+    private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles) {
+        return roles.stream().map(role -> new SimpleGrantedAuthority(role.getName())).collect(Collectors.toList());
     }
 
 }
