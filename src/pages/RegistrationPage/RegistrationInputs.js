@@ -1,30 +1,46 @@
 import React, { Component } from 'react';
+import Data from "../../services/Data"
 
 class RegistrationInputs extends Component {
     constructor(props) {
         super(props);
-        this.state={
-            email:"",
-            password:"",
-            passwordConfirm:"",
-            name:"",
-            surname:"",
-            pesel:"",
-            phoneNumber:"",
+        this.state = {
+            email: "",
+            password: "",
+            passwordConfirm: "",
+            name: "",
+            surname: "",
+            pesel: "",
+            phoneNumber: "",
         }
         this.change = this.change.bind(this)
         this.register = this.register.bind(this)
     }
-    
-    change(e){
+
+    change(e) {
         this.setState({
-            [e.target.name]:e.target.value
+            [e.target.name]: e.target.value
         })
     }
-    register(){
-        if(this.state.email !=="" && this.state.password !=="" && this.state.passwordConfirm !=="" && this.state.name !=="" && this.state.surname !=="" && this.state.pesel !=="" && this.state.phoneNumber !==""){
-            if(this.state.password===this.state.passwordConfirm){
-                console.log("git")
+    register() {
+        if (this.state.email !== "" && this.state.password !== "" && this.state.passwordConfirm !== "" && this.state.name !== "" && this.state.surname !== "" && this.state.pesel !== "" && this.state.phoneNumber !== "") {
+            if (this.state.password === this.state.passwordConfirm) {
+                let data = {
+                    email: this.state.email,
+                    password: this.state.password,
+                    name: this.state.name,
+                    surname: this.state.surname,
+                    telephone: this.state.phoneNumber,
+                    pesel: this.state.pesel
+                }
+                Data.register(data).then(res => {
+                    alert('udało sie')
+                }).catch(err => {
+                    alert("błąd jakiś")
+                })
+            }
+            else {
+                alert("hasła nie są takie same")
             }
         }
     }

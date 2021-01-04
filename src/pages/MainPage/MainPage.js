@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Menu from "../Menu"
 import Slider from "./Slider"
-import Data from "../../services/Data"
 import "../../css/mainpage.css"
 
 class MainPage extends Component {
