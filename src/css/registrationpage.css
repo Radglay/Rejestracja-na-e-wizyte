@@ -1,0 +1,69 @@
+.registrationpage{
+    width: 100%;
+    height: auto;
+    min-height: 100% !important;
+    background-color: #edf0f6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registrationdiv {
+    width: 35%;
+    height: auto;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    padding: 1.5%;
+    overflow: auto;
+  }
+  .registrationspan {
+    font-family: Arial;
+    color: #1a2327;
+    font-size: 28px;
+    border-bottom: solid 2.2px #2c3a41;
+    padding-bottom: 0.5%;
+    margin-bottom: 1.5%;
+  }
+  .registrationbuttons {
+    color: "white";
+    background-color: #2c3a41;
+    height: 35px;
+    width: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    color: white;
+  }
+  .registrationbuttons:hover {
+    background-color: #1a2327;
+    cursor: pointer;
+  }
+
+  .regdiv {
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .reginput {
+    margin-left: 5px;
+    width: 50%;
+  }
+  .regpanel {
+    font-family: Arial;
+    color: #1a2327;
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+  }

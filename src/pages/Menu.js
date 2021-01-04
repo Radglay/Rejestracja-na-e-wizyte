@@ -11,6 +11,8 @@ class Menu extends Component {
             visable: "0",
         };
         this.scrollEvent = this.scrollEvent.bind(this)
+        this.goToPage = this.goToPage.bind(this)
+        this.goToMainPage = this.goToMainPage.bind(this)
     }
 
     
@@ -42,6 +44,15 @@ class Menu extends Component {
         window.removeEventListener("scroll", this.scrollEvent.bind);
     }
 
+    goToPage(e){
+        history.push(e.target.id)
+    }
+    
+    goToMainPage(){
+        history.push("/")
+    }
+    
+
     render() {
         const mystyle = {
             top: this.state.visable,
@@ -49,9 +60,9 @@ class Menu extends Component {
 
         return (
             <div className="menudiv" style={mystyle}>
-                <span style={{ marginRight: "auto", display: "flex", alignItems: "center", color: "white", fontSize: "30px", paddingLeft: "1.5%" }}>System rejestracji</span>
-                <div className="menubutton" onClick={this.logout}>Lista lekarzy</div>
-                <div className="menubutton" onClick={this.logout}>Zaloguj się</div>
+                <span onClick={this.goToMainPage} style={{ cursor:"pointer", marginRight: "auto", display: "flex", alignItems: "center", color: "white", fontSize: "30px", paddingLeft: "1.5%" }}>System rejestracji</span>
+                <div className="menubutton">Lista lekarzy</div>
+                <div className="menubutton" id="/zaloguj" onClick={this.goToPage}>Zaloguj się</div>
             </div>
         );
     }

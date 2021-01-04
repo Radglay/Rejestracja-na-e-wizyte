@@ -6,21 +6,6 @@ import "../../css/mainpage.css"
 
 class MainPage extends Component {
 
-    constructor(props) {
-        super(props);
-        
-    }
-    
-    componentDidMount(){
-        let data={
-            username:"testowy",
-            password:"tak",
-        }
-        Data.signIn(data).then(res =>{
-            console.log(res)
-        })
-    }
-
     render() {
         return (
             <div className="mainpage">
