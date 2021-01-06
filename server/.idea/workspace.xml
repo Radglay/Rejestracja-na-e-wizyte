@@ -6,27 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="af2727d9-079a-4584-a066-ace0a88dbbb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.lock.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.trace.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/EwizytaApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/config/SecurityConfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/UserRegistrationDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/io/ewizyta/EwizytaApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +25,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ewizyta" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -78,17 +65,6 @@
     <property name="aspect.path.notification.shown" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EwizytaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ewizyta.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="projekt.ewizyta.EwizytaApplication" />
@@ -106,6 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1609963701384</updated>
       <workItem from="1609963702503" duration="1929000" />
+      <workItem from="1609965858681" duration="591000" />
     </task>
     <servers />
   </component>

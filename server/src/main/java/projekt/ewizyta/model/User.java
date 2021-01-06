@@ -16,9 +16,9 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String imie;
+    private String name;
 
-    private String nazwisko;
+    private String surname;
 
     private String email;
 
@@ -26,7 +26,7 @@ public class User {
 
     private String pesel;
 
-    private String telefon;
+    private String telephone;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
@@ -42,14 +42,14 @@ public class User {
 
     }
 
-    public User(String imie, String nazwisko, String email, String password, String pesel, String telefon, Collection<Role> roles) {
+    public User(String email, String password, String name, String surname,String telephone, String pesel, Collection<Role> roles) {
         super();
-        this.imie = imie;
-        this.nazwisko = nazwisko;
+        this.name = name;
+        this.surname = surname;
         this.email = email;
         this.password = password;
         this.pesel = pesel;
-        this.telefon = telefon;
+        this.telephone = telephone;
         this.roles = roles;
     }
 

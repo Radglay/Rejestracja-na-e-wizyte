@@ -23,12 +23,12 @@ public class UserService {
     }
 
     public User saveUser(User user) {
-        User newUser = new User(user.getImie(),
-                user.getNazwisko(),
-                user.getEmail(),
+        User newUser = new User(user.getEmail(),
                 user.getPassword(),
+                user.getName(),
+                user.getSurname(),
+                user.getTelephone(),
                 user.getPesel(),
-                user.getTelefon(),
                 Arrays.asList(new Role("USER")));
 
         return userRepository.save(newUser);
