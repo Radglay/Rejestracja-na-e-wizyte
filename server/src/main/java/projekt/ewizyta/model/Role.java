@@ -1,4 +1,5 @@
-package io.ewizyta.model;
+package projekt.ewizyta.model;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -6,10 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
-@Table(name = "ROLES")
 @Setter
 @Getter
 public class Role {
@@ -19,12 +18,14 @@ public class Role {
 
     private String role;
 
-    public Role(String role) {
-        this.role = role;
-    }
-
     public Role() {
 
+    }
+
+
+    public Role(String role) {
+        super();
+        this.role = role;
     }
 
     public String getName() {

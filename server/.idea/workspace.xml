@@ -4,21 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce803fa9-22fb-4d8f-b19c-afada530f350" name="Default Changelist" comment="">
+    <list default="true" id="af2727d9-079a-4584-a066-ace0a88dbbb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.lock.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.lock.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Grupa.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/HelloService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/UserRegistrationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/UserRegistrationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.lock.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.trace.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/EwizytaApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/controller/RegistrationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/service/UserServiceImplement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/ewizyta/web/dto/UserRegistrationDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/io/ewizyta/EwizytaApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,28 +41,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ewizyta" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ewizyta" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ewizyta" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -64,8 +53,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -73,7 +60,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1lFsQ95EP4RXZogz362HetvWlKd" />
+  <component name="ProjectId" id="1mi5igkW8rMcr3x0Z0SV24H0OyK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -81,7 +68,6 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -90,21 +76,22 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
-  </component>
-  <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="io.ewizyta.service" />
-    </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EwizytaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ewizyta.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.ewizyta.EwizytaApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="projekt.ewizyta.EwizytaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,33 +100,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ce803fa9-22fb-4d8f-b19c-afada530f350" name="Default Changelist" comment="" />
-      <created>1607204157019</created>
+      <changelist id="af2727d9-079a-4584-a066-ace0a88dbbb5" name="Default Changelist" comment="" />
+      <created>1609963701384</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1607204157019</updated>
-      <workItem from="1607204158170" duration="212000" />
-      <workItem from="1607204427516" duration="64000" />
-      <workItem from="1607204527131" duration="151000" />
-      <workItem from="1607204834207" duration="876000" />
-      <workItem from="1607205900376" duration="2303000" />
-      <workItem from="1607212482229" duration="37000" />
-      <workItem from="1607258536363" duration="6344000" />
-      <workItem from="1607267616426" duration="569000" />
-      <workItem from="1607269109570" duration="255000" />
-      <workItem from="1607269377563" duration="2699000" />
-      <workItem from="1607272171863" duration="253000" />
-      <workItem from="1607272755200" duration="237000" />
-      <workItem from="1607275105099" duration="9000" />
-      <workItem from="1607280770943" duration="355000" />
-      <workItem from="1607351756223" duration="1471000" />
-      <workItem from="1607368586474" duration="58000" />
-      <workItem from="1607696326483" duration="405000" />
-      <workItem from="1607696759538" duration="1514000" />
-      <workItem from="1607900777555" duration="1750000" />
-      <workItem from="1607983757324" duration="542000" />
-      <workItem from="1607984310574" duration="2453000" />
-      <workItem from="1607986776150" duration="260000" />
+      <updated>1609963701384</updated>
+      <workItem from="1609963702503" duration="1929000" />
     </task>
     <servers />
   </component>
