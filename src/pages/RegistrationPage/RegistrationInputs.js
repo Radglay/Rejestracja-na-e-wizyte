@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Data from "../../services/Data"
+import history from "../../history"
 
 class RegistrationInputs extends Component {
     constructor(props) {
@@ -34,9 +35,17 @@ class RegistrationInputs extends Component {
                     pesel: this.state.pesel
                 }
                 Data.register(data).then(res => {
-                    alert('udało sie')
+                    history.push("/zaloguj")
                 }).catch(err => {
-                    alert("błąd jakiś")
+                    this.setState({
+                        email: "",
+                        password: "",
+                        passwordConfirm: "",
+                        name: "",
+                        surname: "",
+                        pesel: "",
+                        phoneNumber: "",
+                    })
                 })
             }
             else {
@@ -48,7 +57,7 @@ class RegistrationInputs extends Component {
     render() {
         return (
             <div className="registrationdiv">
-                <span className="registrationspan">Rejestracja</span>
+                <span className="registrationspan" style={{fontSize: "32.5px", fontWeight: "bold", color: "#2c3a41", fontFamily: "Arial"}}>Rejestracja</span>
                 <div className="regdiv">
                     <span className="regpanel">Imie:</span>
                     <input className="reginput" type="text" name="name" value={this.state.name} onChange={this.change} placeholder="imie" />
