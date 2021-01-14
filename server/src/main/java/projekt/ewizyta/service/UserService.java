@@ -15,7 +15,7 @@ public class UserService {
     private UserRepository userRepository;
 
     public User fetchUserByEmail(String email) {
-        return userRepository.findByEmail(email);  //find user by username
+        return userRepository.findByEmail(email);  //find user by email
     }
 
     public User fetchUserByEmailAndPassword(String username, String password) {
