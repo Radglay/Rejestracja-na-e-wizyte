@@ -1,10 +1,13 @@
 package projekt.ewizyta.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.Set;
 
 @Entity
 @Setter
@@ -27,6 +30,15 @@ public class User {
     private String pesel;
 
     private String telephone;
+
+
+    @OneToMany(mappedBy="user_data", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private Set<eSkierowanie> skierowania;
+
+    @OneToMany(mappedBy="user_data", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonManagedReference
+    private Set<eRecepta> recepty;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
