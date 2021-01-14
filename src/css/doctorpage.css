@@ -1,0 +1,30 @@
+.doctorpage {
+    width: 100%;
+    height: auto;
+    min-height: 100% !important;
+    background-color: #edf0f6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .doctordiv {
+    width: 100vw;
+    height: 100vh;
+    background-color: #edf0f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .doctorBox {
+    padding: 2%;
+    width: 60%;
+    height: auto;
+    min-height: 20% !important;
+    background-color: white;
+    box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
