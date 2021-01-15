@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import DoctorListItem from "./DoctorListItem"
+import Data from "../../services/Data"
 
 class DoctorsList extends Component {
     constructor(props) {
@@ -7,6 +8,12 @@ class DoctorsList extends Component {
         this.state = {
             doctors: [{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },{ name: "Jan", surname: "Kowalski", email: "jkowalski@gmail.com", specialisation: "kardiolog" },]
         }
+    }
+
+    componentDidMount(){
+        Data.getDoctors().then(res=>{
+            console.log(res.data)
+        })
     }
 
     render() {

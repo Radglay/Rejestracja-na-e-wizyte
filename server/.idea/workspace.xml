@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af2727d9-079a-4584-a066-ace0a88dbbb5" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/controller/UserController.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.mv.db" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,9 +104,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="UserControllerTest.registerUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -118,9 +123,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="UserRepositoryTest.findByEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -139,9 +142,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="UserRepositoryTest.findByEmailAndPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -160,9 +161,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="UserServiceTest.fetchUserByEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -181,9 +180,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="EwizytaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -218,13 +215,35 @@
       <workItem from="1610115431114" duration="4282000" />
       <workItem from="1610559660925" duration="598000" />
       <workItem from="1610563431098" duration="7607000" />
+<<<<<<< Updated upstream
       <workItem from="1610617078757" duration="16957000" />
       <workItem from="1610655756817" duration="4044000" />
       <workItem from="1610719702474" duration="927000" />
+=======
+      <workItem from="1610719780423" duration="640000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1610719817783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-2560.-172.2048.1112/1920.0.1080.1880@0.0.1920.1040" timestamp="1610719817783" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1610719817783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-2560.-172.2048.1112/1920.0.1080.1880@0.0.1920.1040" timestamp="1610719817783" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1610719817783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-2560.-172.2048.1112/1920.0.1080.1880@0.0.1920.1040" timestamp="1610719817783" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1610719817783">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-2560.-172.2048.1112/1920.0.1080.1880@0.0.1920.1040" timestamp="1610719817783" />
   </component>
 </project>
