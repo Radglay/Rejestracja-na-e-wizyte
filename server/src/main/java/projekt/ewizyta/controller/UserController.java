@@ -51,7 +51,7 @@ public class UserController {
     }
 
     @CrossOrigin("http://localhost:3000")
-    @GetMapping("api/doctors")
+    @GetMapping("/api/doctors")
     public List<Doctor>  findDoctors() {
         return userService.findAllDoctors();
     }

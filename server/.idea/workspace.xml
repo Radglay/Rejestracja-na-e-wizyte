@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af2727d9-079a-4584-a066-ace0a88dbbb5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +220,7 @@
       <workItem from="1610563431098" duration="7607000" />
       <workItem from="1610617078757" duration="16957000" />
       <workItem from="1610655756817" duration="4044000" />
-      <workItem from="1610719702474" duration="885000" />
+      <workItem from="1610719702474" duration="927000" />
     </task>
     <servers />
   </component>
