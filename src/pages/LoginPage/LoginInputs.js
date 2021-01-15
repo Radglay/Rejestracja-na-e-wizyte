@@ -26,6 +26,7 @@ class LoginInputs extends Component {
             sessionStorage.removeItem("role")
         }
         Data.signIn(this.state).then(res => {
+            console.log(res)
             if(res.data.roles[0].role==="USER"){
                 sessionStorage.setItem('role', 1)
             }else{
