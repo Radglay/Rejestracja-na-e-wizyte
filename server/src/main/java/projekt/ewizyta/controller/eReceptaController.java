@@ -2,9 +2,9 @@ package projekt.ewizyta.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import projekt.ewizyta.model.Lek;
+import projekt.ewizyta.model.User;
 import projekt.ewizyta.model.eRecepta;
 import projekt.ewizyta.service.eReceptaService;
 
@@ -22,13 +22,38 @@ public class eReceptaController {
         return receptaService.fetchByUserEmail(email);
     }
 
-    @GetMapping("/api/recepty")
-    public List<eRecepta> getListOfAllSkierowanie() {
-        List<eRecepta> lista = receptaService.getAllSkierowania();
-        for(eRecepta skr : lista) {
-           System.out.println("Tak" + skr.getLekarstwa());
+//    @GetMapping("/api/recepty")
+//    public List<eRecepta> getListOfAllSkierowanie() {
+//        List<eRecepta> lista = receptaService.getAllSkierowania();
+//        for(eRecepta skr : lista) {
+//           System.out.println("Tak" + skr.getLekarstwa());
+//        }
+//
+//        return lista;
+//    }
+
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/api/lek_add")
+    public Lek addLek(@RequestBody Lek lek) throws Exception{
+        String tempNazwa = lek.getNazwa();
+
+
+        //jezeli nazwa nie jest pusta
+        if(tempNazwa != null && !"".equals(tempNazwa)) {
+            Lek newLek = receptaService.fetchLekByNazwa(tempNazwa);
+
+
+            //istnieje juz taki lek
+            if(newLek != null) {
+                throw new Exception("Taki lek juz istnieje w bazie");
+            }
         }
 
-        return lista;
+        Lek lekObj = null;
+        lekObj = receptaService.saveLek(lek);
+
+        return lekObj;
+
     }
 }

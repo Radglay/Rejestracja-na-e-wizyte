@@ -45,14 +45,17 @@ public class eRecepta {
     private Collection<Lek> lekarstwa;
 
     //private LocalDate czas = LocalDate.now();
+    private LocalDate czas;
 
     public eRecepta() {}
 
-    public eRecepta(User user_data, Doctor doctor_data) {
+    public eRecepta(User user_data, Doctor doctor_data, Long kod, Collection<Lek> lekarstwa) {
         super();
         this.user_data = user_data;
         this.doctor_data = doctor_data;
-        //this.czas = LocalDate.now();
+        this.kod = kod;
+        this.lekarstwa = lekarstwa;
+        this.czas = LocalDate.now();
     }
 
 //    public void addMedicine(String nazwa, String dawkowanie) {
