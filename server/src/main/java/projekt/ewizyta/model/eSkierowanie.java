@@ -22,8 +22,8 @@ public class eSkierowanie {
     private User user_data;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
     @JoinColumn(name = "doctor_id", nullable = false)
+    @JsonBackReference//(value="doctor-skierowanie")
     private Doctor doctor_data;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

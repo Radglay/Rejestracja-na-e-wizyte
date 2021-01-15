@@ -27,8 +27,8 @@ public class eRecepta {
     private User user_data;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
     @JoinColumn(name = "doctor_id", nullable = false)
+    @JsonBackReference//(value="doctor-recepta")
     private Doctor doctor_data;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

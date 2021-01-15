@@ -14,9 +14,17 @@ import javax.persistence.Id;
 public class Lekarstwa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
 
-    private int eRecepta_id;
+    private long eRecepta_id;
 
-    private int lek_id;
+    private long lek_id;
+
+    public Lekarstwa(long eRecepta_id, long lek_id) {
+        super();
+        this.eRecepta_id = eRecepta_id;
+        this.lek_id = lek_id;
+    }
+
+    public Lekarstwa() {}
 }

@@ -2,11 +2,13 @@ package projekt.ewizyta.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import projekt.ewizyta.model.Doctor;
 import projekt.ewizyta.model.Role;
 import projekt.ewizyta.model.User;
 import projekt.ewizyta.repository.UserRepository;
 
 import java.util.Arrays;
+import java.util.List;
 
 @Service
 public class UserService {
@@ -32,6 +34,10 @@ public class UserService {
                 Arrays.asList(new Role("USER")));
 
         return userRepository.save(newUser);
+    }
+
+    public List<Doctor> getAllDoctors() {
+        return userRepository.findAllDoctors();
     }
 }
 
