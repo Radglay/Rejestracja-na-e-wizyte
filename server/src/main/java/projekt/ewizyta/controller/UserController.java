@@ -53,6 +53,7 @@ public class UserController {
     @CrossOrigin("http://localhost:3000")
     @GetMapping("/api/doctors")
     public List<Doctor> getAllDoctors() {
+        System.out.println(userService.getAllDoctors().get(0).getType());
         return userService.getAllDoctors();
     }
 }
