@@ -33,11 +33,11 @@ public class User {
 
 
     @OneToMany(mappedBy="user_data", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JsonManagedReference
+    @JsonManagedReference("user-skierowanie")
     private Set<eSkierowanie> skierowania;
 
     @OneToMany(mappedBy="user_data", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JsonManagedReference
+    @JsonManagedReference(value="user-recepta")
     private Set<eRecepta> recepty;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)

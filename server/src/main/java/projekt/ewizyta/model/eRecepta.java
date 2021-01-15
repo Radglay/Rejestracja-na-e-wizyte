@@ -23,7 +23,7 @@ public class eRecepta {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    @JsonBackReference
+    @JsonBackReference(value="user-recepta")
     private User user_data;
 
     @ManyToOne(fetch = FetchType.LAZY)
