@@ -7,9 +7,9 @@
     <list default="true" id="af2727d9-079a-4584-a066-ace0a88dbbb5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BazaDanych.trace.db" beforeDir="false" afterPath="$PROJECT_DIR$/BazaDanych.trace.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bazaDanych.mv.db" beforeDir="false" afterPath="$PROJECT_DIR$/bazaDanych.mv.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projekt/ewizyta/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,17 +85,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.EwizytaApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserControllerTest.loginUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -235,6 +224,7 @@
       <workItem from="1610563431098" duration="7607000" />
       <workItem from="1610617078757" duration="16957000" />
       <workItem from="1610655756817" duration="4044000" />
+      <workItem from="1610719702474" duration="885000" />
     </task>
     <servers />
   </component>

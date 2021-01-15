@@ -2,8 +2,11 @@ package projekt.ewizyta.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import projekt.ewizyta.model.Doctor;
 import projekt.ewizyta.model.User;
 import projekt.ewizyta.service.UserService;
+
+import java.util.List;
 
 @RestController
 public class UserController {
@@ -47,5 +50,10 @@ public class UserController {
         return userObj;
     }
 
+    @CrossOrigin("http://localhost:3000")
+    @GetMapping("api/doctors")
+    public List<Doctor>  findDoctors() {
+        return userService.findAllDoctors();
+    }
 }
 
