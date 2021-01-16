@@ -1,0 +1,32 @@
+.appointmentpage {
+  width: 100%;
+  height: auto;
+  min-height: 100% !important;
+  background-color: #edf0f6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.appointmentbuttons {
+  color: "white";
+  background-color: #2c3a41;
+  height: 100%;
+  width: 13.5%;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  color: white;
+}
+.appointmentbuttons:hover {
+  background-color: #1a2327;
+  cursor: pointer;
+}
+
+.padding{
+  padding-right: 2%;
+  padding-left: 2% ;
+  padding-bottom:2%
+}
