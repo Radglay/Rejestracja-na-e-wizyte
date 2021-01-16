@@ -40,6 +40,10 @@ public class User {
     @JsonManagedReference(value="user-recepta")
     private Set<eRecepta> recepty;
 
+    @OneToMany(mappedBy="user_data",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonManagedReference(value="user-wizyta")
+    private Set<Wizyta> wizyty;
+
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinTable(
             name = "user_roles",

@@ -39,5 +39,14 @@ public class UserService {
     public List<Doctor> getAllDoctors() {
         return userRepository.findAllDoctors();
     }
+
+    public User fetchUserById(Long id) {
+        return userRepository.findUserById(id);
+    }
+
+    public Doctor fetchDoctorById(Long id) {
+        return userRepository.findDoctorById(id);
+    }
+
 }
 

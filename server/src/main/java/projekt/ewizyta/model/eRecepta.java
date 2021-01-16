@@ -58,8 +58,4 @@ public class eRecepta {
         this.czas = LocalDate.now();
     }
 
-//    public void addMedicine(String nazwa, String dawkowanie) {
-//        lekarstwa += "Nazwa: " + nazwa;
-//        lekarstwa += "Dawkowanie: " + dawkowanie;
-//    }
 }
