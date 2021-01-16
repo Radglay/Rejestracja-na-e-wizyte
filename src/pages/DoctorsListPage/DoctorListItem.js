@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import history from '../../history'
+import Data from "../../services/Data"
 
 class DoctorListItem extends Component {
     constructor(props) {
         super(props);
         this.getAppointment = this.getAppointment.bind(this)
     }
-    
-    getAppointment(){
-        history.push({
-            pathname: '/kalendarz',
-            state: { doctorData: this.props }
-          })
+
+    getAppointment() {
+        if (Data.getRole() !== null) {
+            history.push({
+                pathname: '/kalendarz',
+                state: { doctorData: this.props }
+            })
+        }
     }
-    
+
     render() {
         return (
             <div className="el" onClick={this.getAppointment}>

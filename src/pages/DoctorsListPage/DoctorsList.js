@@ -12,6 +12,7 @@ class DoctorsList extends Component {
 
     componentDidMount(){
         Data.getDoctors().then(res=>{
+            console.log(res.data)
             this.setState({
                 doctors: res.data
             })
@@ -29,7 +30,7 @@ class DoctorsList extends Component {
                         <span className="spanstyle">E-mail</span>
                         <span className="spanstyle">Specjalizacja</span>
                     </div>
-                    {this.state.doctors.map((item, key) => (<DoctorListItem key={key} name={item.user.name} surname={item.user.surname} email={item.user.email} specialisation={item.type}/>))}
+                    {this.state.doctors.map((item, key) => (<DoctorListItem key={key} id={item.id} name={item.user.name} surname={item.user.surname} email={item.user.email} specialisation={item.type}/>))}
                 </div>
             </div>
         );

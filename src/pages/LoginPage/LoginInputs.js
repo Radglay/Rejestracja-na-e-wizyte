@@ -24,11 +24,13 @@ class LoginInputs extends Component {
         e.preventDefault()
         if (Data.getRole()) {
             sessionStorage.removeItem("role")
+            sessionStorage.removeItem("user_id")
         }
         Data.signIn(this.state).then(res => {
             console.log(res)
             if(res.data.roles[0].role==="USER"){
                 sessionStorage.setItem('role', 1)
+                sessionStorage.setItem('user_id', res.data.id)
             }else{
                 sessionStorage.setItem('role', 2)
             }

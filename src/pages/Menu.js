@@ -64,6 +64,7 @@ class Menu extends Component {
     goToPage(e) {
         if (e.target.id === "/wyloguj") {
             sessionStorage.removeItem("role")
+            sessionStorage.removeItem("user_id")
             history.push("/")
         } else {
             history.push(e.target.id)

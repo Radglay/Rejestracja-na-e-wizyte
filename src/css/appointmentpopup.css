@@ -11,13 +11,14 @@
 .appointmentbuttons {
   color: "white";
   background-color: #2c3a41;
-  height: 100%;
-  width: 13.5%;
+  height: 25px;
+  width: 5.5%;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
   color: white;
 }
 .appointmentbuttons:hover {
