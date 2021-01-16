@@ -27,6 +27,7 @@ public class eReceptaService {
         return receptaRepository.findAll();
     }
 
+
     public Lek fetchLekByNazwa(String nazwa) {
         return lekRepository.findByNazwa(nazwa);
     }
@@ -41,12 +42,15 @@ public class eReceptaService {
     }
 
 
-//    public eRecepta saveRecepta(eRecepta recepta, User user, Doctor doctor) {
-//        eRecepta newRecepta = new eRecepta(user,
-//                doctor,
-//                recepta.getKod(),
-//                Arrays.asList(new Lek()),
-//                LocalDate.now());
-//    }
+    public eRecepta saveRecepta(eRecepta recepta) {
+        eRecepta newRecepta = new eRecepta(
+                recepta.getUser_data(),
+                recepta.getDoctor_data(),
+                recepta.getKod(),
+               Arrays.asList()   //pusta lista lekarstw
+        );
+
+        return receptaRepository.save(newRecepta);
+    }
 
 }

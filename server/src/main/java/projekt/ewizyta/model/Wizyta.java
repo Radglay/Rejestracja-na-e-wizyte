@@ -1,43 +1,45 @@
 package projekt.ewizyta.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.sun.istack.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
-@Getter
 @Setter
+@Getter
 @Entity
-public class eSkierowanie {
+public class Wizyta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    @JsonBackReference(value="user-skierowanie")
+    @JsonBackReference(value="user-wizyta")
     private User user_data;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "doctor_id", nullable = false)
-    @JsonBackReference//(value="doctor-skierowanie")
+    @JsonBackReference
     private Doctor doctor_data;
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long kod; //dostepu
+    private int year;
+    private int month;
+    private int day;
+    private int hour;
+    private int minute;
 
-    private LocalDate czas;
+    public Wizyta() {}
 
-    public eSkierowanie() {}
-
-    public eSkierowanie(User user_data, Doctor doctor_data, Long kod) {
+    public Wizyta(User user_data, Doctor doctor_data, int year, int month, int day, int hour, int minute) {
         super();
         this.user_data = user_data;
         this.doctor_data = doctor_data;
-        this.kod = kod;
-        this.czas = LocalDate.now();
+        this.year = year;
+        this.month = month;
+        this.day = day;
+        this.hour = hour;
+        this.minute = minute;
     }
 }
