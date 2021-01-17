@@ -15,7 +15,6 @@ class AppointmentItem extends Component {
 
     componentDidMount() {
         Data.getDoctorData({ id: this.props.doc }).then(res => {
-            console.log(res.data)
             this.setState({
                 name: res.data.user.name,
                 surname: res.data.user.surname,
@@ -30,8 +29,6 @@ class AppointmentItem extends Component {
             Data.cancelAppointment({ id: this.props.id }).then(res => {
                 window.location.reload()
             })
-        } else {
-            console.log('nie zrezygnowano');
         }
     }
 
