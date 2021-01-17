@@ -1,6 +1,7 @@
 package projekt.ewizyta.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import projekt.ewizyta.model.Wizyta;
@@ -17,6 +18,9 @@ public interface WizytaRepository extends JpaRepository<Wizyta, Long> {
     @Query("SELECT w FROM Wizyta w WHERE w.doctor_data.id = :id")
     public List<Wizyta> findByDoctorId(@Param("id") Long id);
 
-    @Query("DELETE  FROM Wizyta w WHERE w.id = :id")
+    @Modifying
+    @Query("DELETE FROM Wizyta w WHERE w.id = :id")
     public void deleteById(@Param("id") Long id);
+
+    public Wizyta findWizytaById(Long id);
 }

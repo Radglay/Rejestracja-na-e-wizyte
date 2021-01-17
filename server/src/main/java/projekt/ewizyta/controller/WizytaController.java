@@ -87,15 +87,17 @@ public class WizytaController {
         }
 
 
-//        @DeleteMapping("/api/wizyta_delete/{id}")
-//        public ResponseEntity<Long> deletePost(@PathVariable Long id) {
-//            Wizyta wizyta = wizytaService.f
-//            var isRemoved = wizytaService.deleteWizyta(id);
-//
-//            if (!isRemoved) {
-//                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//            }
-//
-//            return new ResponseEntity<>(id, HttpStatus.OK);
-//        }
+        @CrossOrigin("http://localhost:3000")
+        @PostMapping("/api/wizyta_delete")
+        public ResponseEntity<Long> deletePost(@RequestBody Wizyta wizyta) {
+
+            Wizyta wizytaObj = wizytaService.fetchWizytaById(wizyta.getId());
+            HttpStatus isRemoved = wizytaService.deleteWizyta(wizytaObj.getId());
+
+            if (isRemoved != HttpStatus.OK) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+
+            return new ResponseEntity<>(wizytaObj.getId(), HttpStatus.OK);
+        }
 }

@@ -42,9 +42,12 @@ public class WizytaService {
         return wizytaRepository.save(newWizyta);
     }
 
-    public HttpStatus deleteWizyta(Wizyta wizyta) {
-        wizytaRepository.deleteById(wizyta.getId());
+    public HttpStatus deleteWizyta(Long id) {
+        wizytaRepository.deleteById(id);
         return HttpStatus.OK;
     }
 
+    public Wizyta fetchWizytaById(Long id) {
+        return wizytaRepository.findWizytaById(id);
+    }
 }
