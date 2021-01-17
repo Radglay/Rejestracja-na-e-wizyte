@@ -1,13 +1,23 @@
 import React, { Component } from 'react';
+import Data from '../../services/Data';
 
 class AppointmentItem extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            name:"",
+            surname:"",
+            specialisation:""
         }
         this.cancelAppointment = this.cancelAppointment.bind(this)
         this.goToAppointment = this.goToAppointment.bind(this)
+    }
+
+    componentDidMount(){
+        Data.getDoctorData({id:this.props.doc}).then(res=>{
+            console.log(res.data)
+        })
+        
     }
 
     cancelAppointment() {
