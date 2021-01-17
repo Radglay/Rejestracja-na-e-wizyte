@@ -21,7 +21,7 @@ public class Wizyta {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "doctor_id", nullable = false)
-    @JsonBackReference
+    @JsonBackReference(value="doctor-wizyta")
     private Doctor doctor_data;
 
     private int year;

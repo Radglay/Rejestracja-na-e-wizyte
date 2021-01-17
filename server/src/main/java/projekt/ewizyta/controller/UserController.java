@@ -56,5 +56,22 @@ public class UserController {
         System.out.println(userService.getAllDoctors().get(0).getType());
         return userService.getAllDoctors();
     }
+
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/api/user")
+    public User getUserData(@RequestBody User user) throws Exception {
+        User userObj = null;
+
+        if(user.getId() != 0 && user.getId() != null) {
+            userObj = userService.fetchUserById(user.getId());
+        }
+
+        if(userObj == null) {
+            throw new Exception("Nie ma takiego usera!");
+        }
+
+        return userObj;
+    }
 }
 
