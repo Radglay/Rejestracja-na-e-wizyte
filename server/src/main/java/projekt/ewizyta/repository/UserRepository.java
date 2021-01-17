@@ -23,6 +23,7 @@ public interface UserRepository extends JpaRepository<User, Integer> {
     //znajdz dotora
     @Query("SELECT d FROM Doctor d WHERE d.id = :id")
     public Doctor findDoctorById(@Param("id") Long id);
+
     @Query("SELECT d FROM Doctor d")
     public List<Doctor> findAllDoctors();
 
