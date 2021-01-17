@@ -36,6 +36,10 @@ public class Doctor {
     @JsonManagedReference//(value="doctor-recepta")
     private Set<eSkierowanie> recepty;
 
+    @OneToMany(mappedBy="doctor_data", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonManagedReference(value="doctor-wizyta")
+    private Set<Wizyta> wizyty;
+
     public Doctor() {}
 
     public Doctor(String type) {
