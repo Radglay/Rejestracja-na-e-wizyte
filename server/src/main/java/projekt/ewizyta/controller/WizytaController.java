@@ -89,12 +89,33 @@ public class WizytaController {
 
         @CrossOrigin("http://localhost:3000")
         @PostMapping("/api/wizyta_delete")
-        public ResponseEntity<Long> deletePost(@RequestBody Wizyta wizyta) {
+        public ResponseEntity<Long> deleteWizyta(@RequestBody Wizyta wizyta) {
 
             Wizyta wizytaObj = wizytaService.fetchWizytaById(wizyta.getId());
             HttpStatus isRemoved = wizytaService.deleteWizyta(wizytaObj.getId());
 
             if (isRemoved != HttpStatus.OK) {
+                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+            }
+
+            return new ResponseEntity<>(wizytaObj.getId(), HttpStatus.OK);
+        }
+
+        @CrossOrigin("http://localhost:3000")
+        @PostMapping("api/wizyta_update")
+        public ResponseEntity<Long> updateWizyta(@RequestBody Wizyta wizyta) throws Exception{
+
+            Wizyta wizytaObj = wizytaService.fetchWizytaById(wizyta.getId());
+
+            if(wizytaObj == null) {
+                throw new Exception("NIe ma takiej wizyty!");
+            }
+
+            HttpStatus isUpdated = wizytaService.updateWizyta(wizyta);
+
+            System.out.println(wizytaObj.getHour());
+
+            if (isUpdated != HttpStatus.OK) {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
             }
 

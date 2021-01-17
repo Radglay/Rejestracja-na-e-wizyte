@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import projekt.ewizyta.model.Wizyta;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 public interface WizytaRepository extends JpaRepository<Wizyta, Long> {
@@ -23,4 +24,9 @@ public interface WizytaRepository extends JpaRepository<Wizyta, Long> {
     public void deleteById(@Param("id") Long id);
 
     public Wizyta findWizytaById(Long id);
+
+    @Transactional
+    @Modifying
+    @Query("UPDATE Wizyta w SET w.year = :year, w.month = :month, w.day = :day, w.hour = :hour, w.minute = :minute WHERE w.id = :id")
+    public void updatById(@Param("id") Long id, @Param("year") int year, @Param("month") int month, @Param("day") int day, @Param("hour") int hour, @Param("minute") int minute);
 }

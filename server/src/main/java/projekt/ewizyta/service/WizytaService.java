@@ -47,6 +47,13 @@ public class WizytaService {
         return HttpStatus.OK;
     }
 
+    public HttpStatus updateWizyta(Wizyta wizyta) {
+        wizytaRepository.updatById(wizyta.getId(), wizyta.getYear(), wizyta.getMonth(), wizyta.getDay(), wizyta.getHour(), wizyta.getMinute());
+        System.out.println(wizyta.getDay());
+        return HttpStatus.OK;
+    }
+
+
     public Wizyta fetchWizytaById(Long id) {
         return wizytaRepository.findWizytaById(id);
     }
