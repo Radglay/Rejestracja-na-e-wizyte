@@ -30,6 +30,8 @@ public class Wizyta {
     private int hour;
     private int minute;
 
+    private Long identyfikator;
+
     public Wizyta() {}
 
     public Wizyta(User user_data, Doctor doctor_data, int year, int month, int day, int hour, int minute) {
@@ -41,5 +43,6 @@ public class Wizyta {
         this.day = day;
         this.hour = hour;
         this.minute = minute;
+        this.identyfikator = doctor_data.getId();
     }
 }
