@@ -17,17 +17,26 @@ class PatientCard extends Component {
     }
 
     componentDidMount() {
+        Data.getUserData({ id: Data.getUserId() }).then(res => {
+            this.setState({
+                email: res.data.email,
+                name: res.data.name,
+                surname: res.data.surname,
+                pesel: res.data.pesel,
+                phoneNumber: res.data.telephone,
+            })
+        })
         Data.getAppointmentsForClient({ id: Data.getUserId() }).then(res => {
             console.log(res.data)
             let helper = []
-            let helperStart=[]
+            let helperStart = []
 
             for (let i = 0; i < res.data.length; i++) {
-                helper[i] = new Date(res.data[i].year, res.data[i].month, res.data[i].day, res.data[i].hour, (res.data[i].minute+30))
-                helperStart[i] = new Date(res.data[i].year, res.data[i].month, res.data[i].day, res.data[i].hour, res.data[i].minute)
+                helper[i] = new Date(res.data[i].year, res.data[i].month, res.data[i].day, res.data[i].hour, (res.data[i].minute + 30))
+                helperStart[i] = [new Date(res.data[i].year, res.data[i].month, res.data[i].day, res.data[i].hour, res.data[i].minute),res.data[i].id]
             }
-            helper=helper.sort(function(a,b){return a.getTime() - b.getTime()})
-            helperStart=helperStart.sort(function(a,b){return a.getTime() - b.getTime()})
+            helper = helper.sort(function (a, b) { return a.getTime() - b.getTime() })
+            helperStart = helperStart.sort(function (a, b) { return a[0].getTime() - b[0].getTime() })
 
             let today = new Date()
             let futureAppointments = []
@@ -37,10 +46,10 @@ class PatientCard extends Component {
 
             for (let i = 0; i < helper.length; i++) {
                 if (helper[i].getTime() > today.getTime()) {
-                    futureAppointments[y] = helperStart[i].toLocaleDateString() +" "+helperStart[i].toLocaleTimeString().slice(0,5)
+                    futureAppointments[y] = [helperStart[i][0].toLocaleDateString() + " " + helperStart[i][0].toLocaleTimeString().slice(0, 5),helperStart[i][1]]
                     y++
                 } else {
-                    historyOfAppointments[z] = helperStart[i].toLocaleDateString() +" "+helperStart[i].toLocaleTimeString().slice(0,5)
+                    historyOfAppointments[z] = helperStart[i][0].toLocaleDateString() + " " + helperStart[i][0].toLocaleTimeString().slice(0, 5)
                     z++
                 }
             }
@@ -78,9 +87,9 @@ class PatientCard extends Component {
                         <input className="reginput" type="text" name="email" value={this.state.email} disabled placeholder="e-mail" />
                     </div>
                     <span style={{ fontSize: "32.5px", fontWeight: "bold", color: "#2c3a41", fontFamily: "Arial", marginBottom: "2%", marginTop: "2%", borderBottom: "solid 2.2px #2c3a41" }}>Najbliższe wizyty</span>
-                    {this.state.futureAppointments.map((item, key) => (<AppointmentItem key={key} id={item.id} name={"test"} surname={"test"} specialisation={"test"} date={item} />))}
+                    {this.state.futureAppointments.map((item, key) => (<AppointmentItem key={key} id={item[1]} future={true} name={"test"} surname={"test"} specialisation={"test"} date={item[0]} />))}
                     <span style={{ fontSize: "32.5px", fontWeight: "bold", color: "#2c3a41", fontFamily: "Arial", marginBottom: "2%", marginTop: "2%", borderBottom: "solid 2.2px #2c3a41" }}>Historia wizyt</span>
-                    {this.state.historyOfAppointments.map((item, key) => (<AppointmentItem key={key} id={item.id} name={"test"} surname={"test"} specialisation={"test"} date={item} />))}
+                    {this.state.historyOfAppointments.map((item, key) => (<AppointmentItem key={key} future={false} id={item.id} name={"test"} surname={"test"} specialisation={"test"} date={item} />))}
                 </div>
             </div>
         );
