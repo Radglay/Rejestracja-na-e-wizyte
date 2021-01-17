@@ -6,6 +6,7 @@ import DoctorsListPage from "./pages/DoctorsListPage/DoctorsListPage"
 import RegistrationPage from './pages/RegistrationPage/RegistrationPage';
 import PatientCardPage from './pages/PatientCardPage/PatientCardPage';
 import DoctorPage from "./pages/DoctorPage/DoctorPage"
+import AppointmentPage from "./pages/AppointmentPage/AppointmentPage"
 
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
             <Switch>
                 <Route exact path="/" component={MainPage} />
                 <Route exact path="/lista-lekarzy" component={DoctorsListPage} />
+                <Route exact path="/kalendarz" component={AppointmentPage} />
                 <Route exact path="/zaloguj" component={LoginPage} />
                 <Route exact path="/karta-pacjenta" component={PatientCardPage} />
                 <Route exact path="/zarzadzaj-wizytami" component={DoctorPage} />
