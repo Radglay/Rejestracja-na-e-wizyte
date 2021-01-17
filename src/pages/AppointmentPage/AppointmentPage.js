@@ -73,25 +73,29 @@ class AppointmentPage extends Component {
                     break
                 }
             }
-
+            let today = new Date()
             if (check === false) {
-                let data = {
-                    user_data: {
-                        id: Data.getUserId()
-                    },
-                    doctor_data: {
-                        id: history.location.state.doctorData.id
-                    },
-                    year: this.state.year,
-                    month: this.state.month,
-                    day: this.state.day,
-                    hour: this.state.hour,
-                    minute: this.state.minute,
-                }
+                if (today.getTime() > data.StartTime.getTime()) {
+                    alert("Nie można ustawić daty z przeszłości.")
+                } else {
+                    let data = {
+                        user_data: {
+                            id: Data.getUserId()
+                        },
+                        doctor_data: {
+                            id: history.location.state.doctorData.id
+                        },
+                        year: this.state.year,
+                        month: this.state.month,
+                        day: this.state.day,
+                        hour: this.state.hour,
+                        minute: this.state.minute,
+                    }
 
-                Data.addAppointment(data).then(res => {
-                    window.location.reload()
-                })
+                    Data.addAppointment(data).then(res => {
+                        window.location.reload()
+                    })
+                }
             }
         } else {
             alert("Wizyta musi zaczynać sie o pełnej godzinie lub wpół do pełnej godziny.")
