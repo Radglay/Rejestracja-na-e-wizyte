@@ -1,6 +1,8 @@
 package projekt.ewizyta.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import projekt.ewizyta.model.Doctor;
 import projekt.ewizyta.model.User;
@@ -83,7 +85,17 @@ public class WizytaController {
 
             return wizytaObj;
         }
+
+
+//        @DeleteMapping("/api/wizyta_delete/{id}")
+//        public ResponseEntity<Long> deletePost(@PathVariable Long id) {
+//            Wizyta wizyta = wizytaService.f
+//            var isRemoved = wizytaService.deleteWizyta(id);
 //
+//            if (!isRemoved) {
+//                return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+//            }
 //
-//        @DeleteMapping("/api/wizyta_delete")
+//            return new ResponseEntity<>(id, HttpStatus.OK);
+//        }
 }

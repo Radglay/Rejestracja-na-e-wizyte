@@ -16,4 +16,7 @@ public interface WizytaRepository extends JpaRepository<Wizyta, Long> {
 
     @Query("SELECT w FROM Wizyta w WHERE w.doctor_data.id = :id")
     public List<Wizyta> findByDoctorId(@Param("id") Long id);
+
+    @Query("DELETE  FROM Wizyta w WHERE w.id = :id")
+    public void deleteById(@Param("id") Long id);
 }

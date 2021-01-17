@@ -1,6 +1,8 @@
 package projekt.ewizyta.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import projekt.ewizyta.model.Doctor;
 import projekt.ewizyta.model.User;
@@ -38,6 +40,11 @@ public class WizytaService {
         );
 
         return wizytaRepository.save(newWizyta);
+    }
+
+    public HttpStatus deleteWizyta(Wizyta wizyta) {
+        wizytaRepository.deleteById(wizyta.getId());
+        return HttpStatus.OK;
     }
 
 }

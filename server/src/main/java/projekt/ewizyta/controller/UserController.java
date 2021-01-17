@@ -57,6 +57,23 @@ public class UserController {
         return userService.getAllDoctors();
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/api/doctor")
+    public Doctor getDoctor(@RequestBody Doctor doctor) throws Exception{
+        Doctor doctorObj = null;
+
+        if(doctor.getId() != 0 && doctor.getId() != null) {
+            doctorObj = userService.fetchDoctorById(doctor.getId());
+        }
+
+        if(doctorObj == null) {
+            throw new Exception("Nie ma takiego lekarza!");
+        }
+
+        return doctorObj;
+
+    }
+
 
     @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/api/user")
