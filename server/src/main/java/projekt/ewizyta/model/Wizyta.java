@@ -31,6 +31,7 @@ public class Wizyta {
     private int minute;
 
     private Long identyfikator;
+    private Long identyfikator_doctor;
 
     public Wizyta() {}
 
@@ -44,5 +45,6 @@ public class Wizyta {
         this.hour = hour;
         this.minute = minute;
         this.identyfikator = doctor_data.getId();
+        this.identyfikator_doctor = user_data.getId();
     }
 }
