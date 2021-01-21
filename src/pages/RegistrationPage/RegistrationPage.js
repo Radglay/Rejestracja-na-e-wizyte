@@ -7,8 +7,8 @@ class RegistrationPage extends Component {
     render() {
         return (
             <div className="registrationpage">
-                <Menu/>
-                <RegistrationInputs/>
+                <Menu />
+                <RegistrationInputs />
             </div>
         );
     }

@@ -7,8 +7,8 @@ class DoctorsListPage extends Component {
     render() {
         return (
             <div className="doctorlistpage">
-                <Menu/>
-                <DoctorsList/>
+                <Menu />
+                <DoctorsList />
             </div>
         );
     }

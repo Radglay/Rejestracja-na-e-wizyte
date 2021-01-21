@@ -86,7 +86,7 @@ class Menu extends Component {
                 <span onClick={this.goToMainPage} style={{ cursor: "pointer", marginRight: "auto", display: "flex", alignItems: "center", color: "white", fontSize: "30px", paddingLeft: "1.5%" }}>System rejestracji</span>
                 <div className="menubutton" id="/lista-lekarzy" onClick={this.goToPage}>Lista lekarzy</div>
                 {this.state.isDoctor
-                    ? <div className="menubutton" id={"/zarzadzaj-wizytami"} onClick={this.goToPage}>Zarządzaj</div>
+                    ? <div className="menubutton" id={"/zarzadzaj-wizytami"} onClick={this.goToPage}>Wizyty</div>
                     : <div></div>
                 }
                 {this.state.isClient

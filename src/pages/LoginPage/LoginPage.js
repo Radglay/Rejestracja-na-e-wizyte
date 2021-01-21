@@ -4,12 +4,12 @@ import LoginInputs from "./LoginInputs"
 import "../../css/loginpage.css"
 
 class LoginPage extends Component {
-    
+
     render() {
         return (
             <div className="loginpage">
-               <Menu/>
-               <LoginInputs />
+                <Menu />
+                <LoginInputs />
             </div>
         );
     }

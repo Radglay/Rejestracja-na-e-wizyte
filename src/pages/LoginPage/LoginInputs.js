@@ -27,12 +27,12 @@ class LoginInputs extends Component {
             sessionStorage.removeItem("user_id")
         }
         Data.signIn(this.state).then(res => {
-            console.log(res)
-            if(res.data.roles[0].role==="USER"){
+            if (res.data.roles[0].role === "USER") {
                 sessionStorage.setItem('role', 1)
                 sessionStorage.setItem('user_id', res.data.id)
-            }else{
+            } else {
                 sessionStorage.setItem('role', 2)
+                sessionStorage.setItem('user_id', res.data.id)
             }
             history.push("/")
         }).catch(err => {

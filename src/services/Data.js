@@ -8,7 +8,8 @@ const ADDAPPOINTMENT_REST_API_URL = "http://localhost:8080/api/wizyta_add"
 const GETAPPOINTMENTSFORCLIENT_REST_API_URL = "http://localhost:8080/api/wizyty_user"
 const GETUSERDATA_REST_API_URL = "http://localhost:8080/api/user"
 const GETDOCTORDATA_REST_API_URL = "http://localhost:8080/api/doctor"
-const CANCELAPPOINTMENT_REST_API_URL="http://localhost:8080/api/wizyta_delete/id"
+const CANCELAPPOINTMENT_REST_API_URL = "http://localhost:8080/api/wizyta_delete"
+const UPDATEAPPOINTMENTDATE_REST_API_URL = "http://localhost:8080/api/wizyta_update"
 const ROLE = sessionStorage.getItem("role")
 const USER_ID = sessionStorage.getItem("user_id")
 
@@ -34,11 +35,14 @@ class Data {
     getUserData(data) {
         return axios.post(GETUSERDATA_REST_API_URL, data)
     }
-    getDoctorData(data){
-        return axios.post(GETDOCTORDATA_REST_API_URL,data)
+    getDoctorData(data) {
+        return axios.post(GETDOCTORDATA_REST_API_URL, data)
     }
-    cancelAppointment(data){
-        return axios.post(CANCELAPPOINTMENT_REST_API_URL,data)
+    cancelAppointment(data) {
+        return axios.post(CANCELAPPOINTMENT_REST_API_URL, data)
+    }
+    updateAppointmentDate(data) {
+        return axios.post(UPDATEAPPOINTMENTDATE_REST_API_URL, data)
     }
     getRole() {
         return ROLE
