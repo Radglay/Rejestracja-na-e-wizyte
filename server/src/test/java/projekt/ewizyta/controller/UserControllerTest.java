@@ -34,18 +34,7 @@ class UserControllerTest {
     @Test
     void registerUser() throws Exception {
 
-        MvcResult register = mockMvc.perform(post("/register").content("{\"email\": \"testowy123@wp.pl\", " +
-                "\"password\": \"testowe123\", " +
-                "\"name\": \"Andrzej\", " +
-                "\"surname\": \"Kowalski\", " +
-                "\"telephone\": \"123456789\", " +
-                "\"pesel\": \"11122233345\"}")
-                .contentType("application/json"))
-                .andDo(print())
-                .andExpect(status().is(500))
-                .andReturn();
-
-//        MvcResult register2 = mockMvc.perform(post("/register").content("{\"email\": \"takiegoNIEMA@wp.pl\", " +
+//        MvcResult register = mockMvc.perform(post("/register").content("{\"email\": \"niemapowowdzenie23@wp.pl\", " +
 //                "\"password\": \"testowe123\", " +
 //                "\"name\": \"Andrzej\", " +
 //                "\"surname\": \"Kowalski\", " +
@@ -55,7 +44,18 @@ class UserControllerTest {
 //                .andDo(print())
 //                .andExpect(status().is(200))
 //                .andReturn();
-//    }
+
+        //taki jest, wywali błąd , exception
+        MvcResult register2 = mockMvc.perform(post("/register").content("{\"email\": \"example@gmail.com\", " +
+                "\"password\": \"testowy123\", " +
+                "\"name\": \"Andrzej\", " +
+                "\"surname\": \"Kowalski\", " +
+                "\"telephone\": \"123456789\", " +
+                "\"pesel\": \"11122233345\"}")
+                .contentType("application/json"))
+                .andDo(print())
+                .andExpect(status().is(200))
+                .andReturn();
     }
 
     @Test
@@ -69,8 +69,10 @@ class UserControllerTest {
 //                .andExpect(status().isUnauthorized())
 //                .andReturn();
 
-        MvcResult login2 = mockMvc.perform(post("/login").content("{\"email\": \"testowy123@wp.pl\", " +
-                "\"password\": \"testowe123\"}")
+
+        //taki jest
+        MvcResult login2 = mockMvc.perform(post("/login").content("{\"email\": \"exampaale@gmail.com\", " +
+                "\"password\": \"testowy123\"}")
                 .contentType("application/json"))
                 .andDo(print())
                 .andExpect(status().is(200))
