@@ -23,7 +23,8 @@ Panel logowania, do którego możemy wejść ze strony głównej klikając przyc
 ![image](https://user-images.githubusercontent.com/32621646/114461825-85860880-9be2-11eb-9787-785fc3d1a0ca.png)  
   
 Panel rejetracji klikając **Załóż konto** w panelu logowania lub pod adresem http://localhost:3000/rejestracja  
-![image](https://user-images.githubusercontent.com/32621646/114461865-9171ca80-9be2-11eb-936e-8385df63bfb3.png) 
+![image](https://user-images.githubusercontent.com/32621646/114464232-c6335100-9be5-11eb-9403-be6baac5366f.png)  
+
   
 
 
