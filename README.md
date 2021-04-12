@@ -10,7 +10,7 @@ Projekt powstał w ramach zaliczenia przedmiotu #Inżynieria oprogramowania. Do 
 
 ## Budowanie projektu
 Aby zbudować program należy otworzyć pobrany folder w IntelliJ IDEA, wybrać SDK Java 13 oraz zbudować projekt, zaimportowane zostaną wszystkie podane w pliku konfiguracyjnym **build.gradle** zależności. Następnie należy zainstalować **nodeJS**, pobierając go ze strony https://nodejs.org/en/download/. Aby uruchomić aplikacje należy uruchomić serwer w IntelliJ **Shift + F10** lub wciskając **Run**(zielony trójką w prawym górnym rogu). Dodatkowo należy uruchomić front-end, w katalogu z projektem otwieramy konsole CMD, wpisujemy **install npm** i uruchamiamy za pomocą **npm start**.      
- ####Ty ruro bita
+
 Po pomyślnym wykonaniu komend dotyczących React.js, w konsoli powinien zostać wyświetlony taki komunikat:  
 ![image](https://user-images.githubusercontent.com/32621646/114459336-afd6c680-9be0-11eb-9350-7da737ddb9b0.png)  
 Widzimy również adres strony startowej naszej aplikacji http://localhost:3000
