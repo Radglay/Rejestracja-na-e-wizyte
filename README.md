@@ -44,8 +44,6 @@ Po wybraniu opcji **Karta pacjenta** użytkownik widzi swoje dane oraz zbilżaj�
 
 ![image](https://user-images.githubusercontent.com/32621646/114549326-274c3a80-9c61-11eb-8741-9d0d828c4999.png)
 
-po kliknięciu w nią, w zależności czy jest już dany termin zostaniemy przeniesieni na wizytę bądź nie  
-
 
 
   
