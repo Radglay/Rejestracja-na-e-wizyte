@@ -43,6 +43,7 @@ W przypadku gdy jesteśmy zapisani na wizytę, w kalendarzu lekarza zobaczymy in
 Po wybraniu opcji **Karta pacjenta** użytkownik widzi swoje dane oraz zbilżające się wizyty. W przypadku gdy nie ma jeszcze odpowiedniej godziny a klikniemy dołącz pojawi się alert  
 ![image](https://user-images.githubusercontent.com/32621646/114549326-274c3a80-9c61-11eb-8741-9d0d828c4999.png)  
 ![image](https://user-images.githubusercontent.com/32621646/114549457-55317f00-9c61-11eb-8505-209f0845e2b2.png)  
+Lekarz po zalogowaniu się i wejściu w zakładke **Wizyty** może sprawdzić swoje przyszłe wizyty, edytować termin i usunąć.
 
 
 
