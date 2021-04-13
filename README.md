@@ -33,6 +33,7 @@ Po utworzeniu konta i zalogowaniu się, użytkownik będzie miał dostępne 3 po
 ![image](https://user-images.githubusercontent.com/32621646/114547102-4d241000-9c5e-11eb-8598-b9fb388482e0.png)  
   Po wybraniu **Lista lekarzy** użytkownik będzie mógł po kliknięciu na lekarza zobaczyć jego wizyty i umówić się na wizytę  
   ![image](https://user-images.githubusercontent.com/32621646/114548178-b22c3580-9c5f-11eb-9fcd-383fee326804.png)  
+![image](https://user-images.githubusercontent.com/32621646/114548750-75147300-9c60-11eb-94b5-14406549ee40.png)  
 
 W przypadku gdy jesteśmy zapisani na wizytę, w kalendarzu lekarza zobaczymy informację o naszej wizycie  
 ![image](https://user-images.githubusercontent.com/32621646/114547915-56fa4300-9c5f-11eb-805c-29c71438918c.png)  
