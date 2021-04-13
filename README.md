@@ -30,6 +30,8 @@ Wybranie Listy dostępnych lekarzy z menu **Lista lekarzy**
 
 
 Po utworzeniu konta i zalogowaniu się, użytkownik będzie miał dostępne 3 pozycje w menu  
+![image](https://user-images.githubusercontent.com/32621646/114549150-f23fe800-9c60-11eb-9551-2517332c51da.png)  
+Lekarz po zalogowaniu się będzie miał takie 3 opzycje w menu  
 ![image](https://user-images.githubusercontent.com/32621646/114547102-4d241000-9c5e-11eb-8598-b9fb388482e0.png)  
   Po wybraniu **Lista lekarzy** użytkownik będzie mógł po kliknięciu na lekarza zobaczyć jego wizyty i umówić się na wizytę  
   ![image](https://user-images.githubusercontent.com/32621646/114548178-b22c3580-9c5f-11eb-9fcd-383fee326804.png)  
