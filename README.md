@@ -29,6 +29,7 @@ Wybranie Listy dostępnych lekarzy z menu **Lista lekarzy**
 ![image](https://user-images.githubusercontent.com/32621646/114546233-33ce9400-9c5d-11eb-9eaf-b959d78574b8.png)  
 
 
+
 Po utworzeniu konta i zalogowaniu się, użytkownik będzie miał dostępne 3 pozycje w menu  
 ![image](https://user-images.githubusercontent.com/32621646/114549150-f23fe800-9c60-11eb-9551-2517332c51da.png)  
 Lekarz po zalogowaniu się będzie miał takie 3 opzycje w menu  
