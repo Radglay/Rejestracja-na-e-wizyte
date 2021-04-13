@@ -45,6 +45,8 @@ Po wybraniu opcji **Karta pacjenta** użytkownik widzi swoje dane oraz zbilżaj�
 Lekarz po zalogowaniu się będzie miał takie 3 opzycje w menu  
 ![image](https://user-images.githubusercontent.com/32621646/114547102-4d241000-9c5e-11eb-8598-b9fb388482e0.png)  
 Lekarz po wejściu w zakładke **Wizyty** może sprawdzić swoje przyszłe wizyty, edytować termin i usunąć.
+![image](https://user-images.githubusercontent.com/32621646/114551254-6e3b2f80-9c63-11eb-93e3-84f85fcffbc7.png)
+  
 
 
 
