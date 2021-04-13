@@ -32,8 +32,7 @@ Wybranie Listy dostępnych lekarzy z menu **Lista lekarzy**
 
 Po utworzeniu konta i zalogowaniu się, użytkownik będzie miał dostępne 3 pozycje w menu  
 ![image](https://user-images.githubusercontent.com/32621646/114549150-f23fe800-9c60-11eb-9551-2517332c51da.png)  
-Lekarz po zalogowaniu się będzie miał takie 3 opzycje w menu  
-![image](https://user-images.githubusercontent.com/32621646/114547102-4d241000-9c5e-11eb-8598-b9fb388482e0.png)  
+
   Po wybraniu **Lista lekarzy** użytkownik będzie mógł po kliknięciu na lekarza zobaczyć jego wizyty i umówić się na wizytę  
   ![image](https://user-images.githubusercontent.com/32621646/114548178-b22c3580-9c5f-11eb-9fcd-383fee326804.png)  
 ![image](https://user-images.githubusercontent.com/32621646/114548750-75147300-9c60-11eb-94b5-14406549ee40.png)  
@@ -43,7 +42,9 @@ W przypadku gdy jesteśmy zapisani na wizytę, w kalendarzu lekarza zobaczymy in
 Po wybraniu opcji **Karta pacjenta** użytkownik widzi swoje dane oraz zbilżające się wizyty. W przypadku gdy nie ma jeszcze odpowiedniej godziny a klikniemy dołącz pojawi się alert  
 ![image](https://user-images.githubusercontent.com/32621646/114549326-274c3a80-9c61-11eb-8741-9d0d828c4999.png)  
 ![image](https://user-images.githubusercontent.com/32621646/114549457-55317f00-9c61-11eb-8505-209f0845e2b2.png)  
-Lekarz po zalogowaniu się i wejściu w zakładke **Wizyty** może sprawdzić swoje przyszłe wizyty, edytować termin i usunąć.
+Lekarz po zalogowaniu się będzie miał takie 3 opzycje w menu  
+![image](https://user-images.githubusercontent.com/32621646/114547102-4d241000-9c5e-11eb-8598-b9fb388482e0.png)  
+Lekarz po wejściu w zakładke **Wizyty** może sprawdzić swoje przyszłe wizyty, edytować termin i usunąć.
 
 
 
