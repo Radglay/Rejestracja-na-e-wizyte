@@ -25,6 +25,15 @@ Panel logowania, do którego możemy wejść ze strony głównej klikając przyc
 Panel rejetracji klikając **Załóż konto** w panelu logowania lub pod adresem http://localhost:3000/rejestracja  
 ![image](https://user-images.githubusercontent.com/32621646/114464232-c6335100-9be5-11eb-9403-be6baac5366f.png)  
 
+Wybranie Listy dostępnych lekarzy z menu **Lista lekarzy**  
+![image](https://user-images.githubusercontent.com/32621646/114546233-33ce9400-9c5d-11eb-9eaf-b959d78574b8.png)  
+
+
+Po utworzeniu konta i zalogowaniu się, użytkownik będzie miał dostępne 3 pozycje w menu  
+![image](https://user-images.githubusercontent.com/32621646/114547102-4d241000-9c5e-11eb-8598-b9fb388482e0.png)  
+  Po wybraniu **Lista lekarzy** użytkownik będzie mógł po kliknięciu na lekarza zobaczyć jego wizyty i umówić się na wizytę  
+
+
   
 
 
